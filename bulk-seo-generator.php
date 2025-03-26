@@ -86,7 +86,7 @@ function bsg_admin_page() {
                 <button id="bsg-preview" class="button button-primary bsg-button" disabled>Generate SEO Content <span class="dashicons dashicons-visibility"></span></button>
                 <div id="bsg-loading" class="bsg-loading" style="display: none;">
                     <span class="spinner"></span>
-                    <p>AI is analyzing the pages and generating SEO content...</p>
+                    <p>AI is analysing the pages and generating SEO content...</p>
                 </div>
             </div>
             
