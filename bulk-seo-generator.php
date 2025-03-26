@@ -103,11 +103,6 @@ function bsg_admin_page() {
             <div id="bsg-selected-pages" class="bsg-section" style="display: none;">
                 <h3>Selected Pages <span id="bsg-page-count"></span></h3>
                 <div id="bsg-page-preview" class="bsg-page-list"></div>
-                <div id="bsg-keyphrase-section" class="bsg-keyphrase-section">
-                    <h4>Focused Keyphrases</h4>
-                    <p class="bsg-help-text">Enter a focused keyphrase for each page to optimize the generated SEO content.</p>
-                    <div id="bsg-keyphrase-list"></div>
-                </div>
                 <p class="bsg-help-text">Select pages to generate SEO titles and meta descriptions.</p>
             </div>
             
@@ -177,8 +172,8 @@ function bsg_fetch_pages() {
         'post_type' => 'page',
         'posts_per_page' => -1,
         'post_status' => 'publish',
-        'orderby' => 'title', // Sort by title
-        'order' => 'ASC',     // Ascending order (A-Z)
+        'orderby' => 'title',
+        'order' => 'ASC',
     );
 
     $pages = get_posts($args);
@@ -232,7 +227,8 @@ function bsg_generate_seo_content() {
             'current_title' => $current_title,
             'current_desc' => $current_desc,
             'generated_title' => $generated_content['title'],
-            'generated_desc' => $generated_content['desc']
+            'generated_desc' => $generated_content['desc'],
+            'keyphrase' => $keyphrase // Include the keyphrase in the response
         );
     }
 
