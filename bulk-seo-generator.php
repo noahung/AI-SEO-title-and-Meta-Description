@@ -146,8 +146,8 @@ function bsg_settings_page() {
                 <tr>
                     <th><label for="bsg_chatgpt_prompt">ChatGPT Prompt</label></th>
                     <td>
-                        <textarea name="bsg_chatgpt_prompt" id="bsg_chatgpt_prompt" rows="5" class="large-text"><?php echo esc_textarea(get_option('bsg_chatgpt_prompt', 'Generate an SEO-optimized title (up to 60 characters) and a meta description (up to 160 characters) for this page based on its content. Ensure both a title and a description are provided.')); ?></textarea>
-                        <p class="description">Customize the prompt for generating SEO titles and meta descriptions. The response format (Title: [Your Title]\nDescription: [Your Description]) is automatically enforced.</p>
+                        <textarea name="bsg_chatgpt_prompt" id="bsg_chatgpt_prompt" rows="5" class="large-text"><?php echo esc_textarea(get_option('bsg_chatgpt_prompt', 'Generate an SEO-optimised title (up to 60 characters) and a meta description (up to 160 characters) for this page based on its content. Ensure both a title and a description are provided.')); ?></textarea>
+                        <p class="description">Customise the prompt for generating SEO titles and meta descriptions. The response format (Title: [Your Title]\nDescription: [Your Description]) is automatically enforced.</p>
                     </td>
                 </tr>
             </table>
